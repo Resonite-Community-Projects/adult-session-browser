@@ -66,9 +66,9 @@ If running from a headless server, ensure the update server is allowed in the he
 
 ```  
     "allowedUrlHosts": [
-    "localhost",
-    "ad-sessions.neos.boltwolf.net"
-  ],
+        "localhost",
+        "ad-sessions.neos.boltwolf.net"
+    ],
 ```
 
 ### Session access facet
