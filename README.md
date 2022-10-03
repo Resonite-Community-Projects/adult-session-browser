@@ -64,7 +64,8 @@ These permissions only allow user accounts within your Neos group to read the ac
 
 If running from a headless server, ensure the update server is allowed in the headless config:
 
-```  "allowedUrlHosts": [
+```  
+    "allowedUrlHosts": [
     "localhost",
     "ad-sessions.neos.boltwolf.net"
   ],
