@@ -62,6 +62,14 @@ Cloud vars are used to contain the access key to the API server. Cloud var is cr
 
 These permissions only allow user accounts within your Neos group to read the access key, meaning if the update system is taken from your session by a user, it will not function. The user could store your access key however, if that case arises then change your access key cloud var, which would automatically propogate to all session update systems spawned, removing the need to manually deploy a new access key if compromised. As Neos does not support hasing/encryption within Logix, this is the best we can offer for now.
 
+If running from a headless server, ensure the update server is allowed in the headless config:
+
+```  "allowedUrlHosts": [
+    "localhost",
+    "ad-sessions.neos.boltwolf.net"
+  ],
+```
+
 ### Session access facet
 
 Once session data is pushed to the server, data can be accessed and presented easily within a facet or in-world UIX. A facet is made available within this folder: `neosrec:///U-GrayBoltWolf/R-5ceb026a-00d4-4b64-a922-dd34d33ba6d3`
