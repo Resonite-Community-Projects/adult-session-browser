@@ -21,7 +21,7 @@ An admin of the Neos group can run these commands to the Neos Bot to create the 
 ```
 /creategroupvar "My Neos Group" sessionAccess
 /setgroupvarperms "My Neos Group" sessionAccess read,write definition_owner
-/setgrpupvartype "My Neos Group" sessionAccess bool
+/setgroupvartype "My Neos Group" sessionAccess bool
 /setgroupvardefaultvalue "My Neos Group" sessionAccess false
 ```
 
@@ -56,7 +56,7 @@ Cloud vars are used to contain the access key to the API server. Cloud var is cr
 /creategroupvar "My Neos Group" sessionUpdateKey
 /setgroupvarperms "My Neos Group" sessionUpdateKey write definition_owner
 /setgroupvarperms "My Neos Group" sessionUpdateKey read definition_owner_unsafe
-/setgrpupvartype "My Neos Group" sessionUpdateKey string
+/setgroupvartype "My Neos Group" sessionUpdateKey string
 /setgroupvarvalue "My Neos Group" sessionUpdateKey U-SOME-BOT-ACCOUNT "ACCESSKEY"
 ```
 
