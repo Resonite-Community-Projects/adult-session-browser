@@ -37,6 +37,8 @@ Per Neos guidelines, all adult sessions must be hidden from the main world brows
 
 As adult sessions must be hidden, it is not possible to get an invite/join link, view friends/contacts in the session, user count, etc. This system provides a 3rd party external API for these sessions. Usage of this system to access hidden adult events without an authentication method in place (cloud variables) is NOT allowed per Neos guidelines. This system MUST be deployed alongside the cloud variable system for adult session hosting.
 
+The recommended session configuration is RegisteredUsers, hidden.
+
 ### Session update system
 
 Within the session you wish to publish to the API and make available, a Logix bot is provided within this public folder:
@@ -60,7 +62,7 @@ Cloud vars are used to contain the access key to the API server. Cloud var is cr
 /setgroupvarvalue "My Neos Group" sessionUpdateKey U-SOME-BOT-ACCOUNT "ACCESSKEY"
 ```
 
-These permissions only allow user accounts within your Neos group to read the access key, meaning if the update system is taken from your session by a user, it will not function. The user could store your access key however, if that case arises then change your access key cloud var, which would automatically propogate to all session update systems spawned, removing the need to manually deploy a new access key if compromised. As Neos does not support hasing/encryption within Logix, this is the best we can offer for now.
+These permissions only allow user accounts within your Neos group to read the access key, meaning if the update system is taken from your session by a user, it will not function. The user could store your access key however, if that case arises then change your access key cloud var, which would automatically propogate to all session update systems spawned, removing the need to manually deploy a new access key if compromised. As Neos does not support hashing/encryption within Logix, this is the best we can offer for now.
 
 If running from a headless server, ensure the update server is allowed in the headless config:
 
