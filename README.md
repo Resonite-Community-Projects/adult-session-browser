@@ -50,8 +50,6 @@ Placeholder help text is placed to give a general idea of the required settings,
 
 ![image](https://user-images.githubusercontent.com/4554196/192861473-1ab52d16-032d-49fd-99c8-e6d5fd1ea93c.png)
 
-An existing API server is available at https://ad-sessions.neos.boltwolf.net for most Neos communities, however this system is provided free for all, and easily allows individual implementation. Server example (PHP) can be found in the repo files.
-
 Cloud vars are used to contain the access key to the API server. Cloud var is created with the following commands:
 
 ```
@@ -63,6 +61,8 @@ Cloud vars are used to contain the access key to the API server. Cloud var is cr
 ```
 
 These permissions only allow user accounts within your Neos group to read the access key, meaning if the update system is taken from your session by a user, it will not function. The user could store your access key however, if that case arises then change your access key cloud var, which would automatically propogate to all session update systems spawned, removing the need to manually deploy a new access key if compromised. As Neos does not support hashing/encryption within Logix, this is the best we can offer for now.
+
+An existing API server is available at https://ad-sessions.neos.boltwolf.net for most Neos communities. ***If you wish to use my server, you will need to send me (GrayBoltWolf) your access key to allow you to push data to the server.***
 
 If running from a headless server, ensure the update server is allowed in the headless config:
 
