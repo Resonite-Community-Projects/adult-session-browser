@@ -77,6 +77,8 @@ If running from a headless server, ensure the update server is allowed in the he
 
 Once session data is pushed to the server, data can be accessed and presented easily within a facet or in-world UIX. A facet is made available within this folder: `neosrec:///U-GrayBoltWolf/R-5ceb026a-00d4-4b64-a922-dd34d33ba6d3`
 
+A video is also provided for quick review of the Facet: https://youtu.be/dyGw4tEvZ_A
+
 ![image](https://user-images.githubusercontent.com/4554196/192862722-3de6dafb-9d29-4ed5-9a8f-b5ed41148f4d.png)
 
 ![image](https://user-images.githubusercontent.com/4554196/192862782-6463a985-06a2-403d-b185-1fc09dffcf43.png)
