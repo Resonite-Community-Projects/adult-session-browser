@@ -1,4 +1,9 @@
 # Neos Restricted Session System
+
+> [!WARNING]  
+> Depreciation notice for NeosVR, this project will be renamed and modified to support only Resonite.
+> Until the release a branch will be available for Resonite, the main branch will be for NeosVR until them.
+
 Enables browsing and viewing available adult sessions within Neos communities through a neos dash facet as well as other endpoints. Being an open data server, arbitrary display methods can be created in Neos as well as other platforms such as a Discord bot.
 
 This is one piece of the overall Neos adult session access system. As this is not native Neos functionality, this aims to add the ability to easily host access-restricted sessions without requiring client or server mods/plugins. This project utilizes 100% native-Neos functionality including web POST/GET, and significant UIX manipulation with Logix.
