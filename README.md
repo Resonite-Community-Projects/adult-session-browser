@@ -2,7 +2,7 @@
 
 Enables browsing and viewing available adult sessions within Resonite communities through a Resonite dash facet as well as other endpoints. Being an open data server, arbitrary display methods can be created in Neos as well as other platforms such as a Discord bot.
 
-This is one piece of the overall Resonite adult session access system. As this is not native Resonite functionality, this aims to add the ability to easily host access-restricted sessions without requiring client or server mods/plugins. This project utilizes 100% native-Resonite functionality including web POST/GET, and significant UIX manipulation with Logix.
+This is one piece of the overall Resonite adult session access system. As this is not native Resonite functionality, this aims to add the ability to easily host access-restricted sessions without requiring client or server mods/plugins. This project utilizes 100% native-Resonite functionality including web POST/GET, and significant UIX manipulation with ProtoFlux.
 
 The following are details on the overall system and architecture:
 
@@ -42,7 +42,7 @@ The recommended session configuration is RegisteredUsers, hidden.
 
 ### Session update system
 
-Within the session you wish to publish to the API and make available, a Logix bot is provided within this public folder:
+Within the session you wish to publish to the API and make available, a ProtoFlux bot is provided within this public folder:
 `resrec:///U-GrayBoltWolf/R-72ff0dd2-b064-44b4-bfb4-2a338333f06d`
 
 ![image](https://user-images.githubusercontent.com/4554196/192861133-5d0f481c-bacd-4a7d-828d-fd173e92b766.png)
@@ -61,7 +61,7 @@ Cloud vars are used to contain the access key to the API server. Cloud var is cr
 /setgroupvarvalue "My Resonite Group" sessionUpdateKey U-SOME-BOT-ACCOUNT "ACCESSKEY"
 ```
 
-These permissions only allow user accounts within your Resonite group to read the access key, meaning if the update system is taken from your session by a user, it will not function. The user could store your access key however, if that case arises then change your access key cloud var, which would automatically propogate to all session update systems spawned, removing the need to manually deploy a new access key if compromised. As Resonite does not support hashing/encryption within Logix, this is the best we can offer for now.
+These permissions only allow user accounts within your Resonite group to read the access key, meaning if the update system is taken from your session by a user, it will not function. The user could store your access key however, if that case arises then change your access key cloud var, which would automatically propogate to all session update systems spawned, removing the need to manually deploy a new access key if compromised. As Resonite does not support hashing/encryption within ProtoFlux, this is the best we can offer for now.
 
 An existing API server is available at https://ad-sessions.resonite.boltwolf.net for most Resonite communities. ***If you wish to use my server, you will need to send me (GrayBoltWolf) your access key to allow you to push data to the server.***
 
