@@ -1,0 +1,13 @@
+version: '3.3'
+
+services:
+  memcached:
+    image: memcached
+
+  bot:
+    build: .
+    volumes:
+      - "./php/index.php:/var/www/html/index.php"
+      - "./keys.txt:/var/www/keys.txt"
+    ports:
+      - "8282:80"

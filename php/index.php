@@ -1,10 +1,12 @@
 <?php
 
 $m = new Memcached();
-$m->addServer('localhost', 11211);
+$m->addServer('memcached', 11211);
+
+$keys = json_decode(file_get_contents('../keys.txt'), true);
 
 if (isset($_POST['oper'])) {
-    if (in_array($_POST['key'], array('KEY1', 'KEY2', 'KEY3'))) {
+    if (in_array($_POST['key'], $keys)) {
         if (!$m->get('sessionIndex')) {
             $m->set('sessionIndex', []);
         }
