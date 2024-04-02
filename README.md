@@ -1,6 +1,6 @@
 # Resonite Restricted Session System
 
-Enables browsing and viewing available adult sessions within Resonite communities through a Resonite dash facet as well as other endpoints. Being an open data server, arbitrary display methods can be created in Neos as well as other platforms such as a Discord bot.
+Enables browsing and viewing available adult sessions within Resonite communities through a Resonite dash facet as well as other endpoints. Being an open data server, arbitrary display methods can be created in Resonite as well as other platforms such as a Discord bot.
 
 This is one piece of the overall Resonite adult session access system. As this is not native Resonite functionality, this aims to add the ability to easily host access-restricted sessions without requiring client or server mods/plugins. This project utilizes 100% native-Resonite functionality including web POST/GET, and significant UIX manipulation with ProtoFlux.
 
@@ -15,7 +15,7 @@ ProbablePrime has excellent videos on these items: https://www.youtube.com/watch
 
 ### Setting up cloud vars
 
-First step is to create a Resonite group: https://wiki.neosvr.com/Groups
+First step is to create a Resonite group: https://wiki.resonite.com/Groups
 
 An admin of the Resonite group can run these commands to the Resonite Bot to create the required cloud variable for access control:
 
