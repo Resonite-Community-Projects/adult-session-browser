@@ -15,6 +15,19 @@ ProbablePrime has excellent videos on these items: https://www.youtube.com/watch
 
 ### Setting up cloud vars
 
+*Some users are affected by a Resonite bug in which accounts migrated from Neos are unable to read from cloud vars:*
+* https://github.com/Yellow-Dog-Man/Resonite-Issues/issues/3101
+* https://github.com/Yellow-Dog-Man/Resonite-Issues/issues/3133
+* https://github.com/Yellow-Dog-Man/Resonite-Issues/issues/537
+
+There is no fix for this issue at the moment - you will have to manually override the access key within the updater itself.
+1. Inspect the updater, and open the "cloud var" child.
+2. Attach Component, Data -> ValueField<string>.
+3. Paste your access token in the Value field (blue highlight).
+4. Grab the Value field reference (green highlight) and drag it into the DynamicField Target (red highlight).
+
+<img width="761" height="1180" alt="image" src="https://github.com/user-attachments/assets/9f4cf587-36f6-40d1-95ca-0d67cd5e5bba" />
+
 First step is to create a Resonite group: https://wiki.resonite.com/Groups
 
 An admin of the Resonite group can run these commands to the Resonite Bot to create the required cloud variable for access control:
