@@ -56,7 +56,7 @@ The recommended session configuration is RegisteredUsers, hidden.
 ### Session update system
 
 Within the session you wish to publish to the API and make available, a ProtoFlux bot is provided within this public folder:
-`resrec:///U-GrayBoltWolf/R-72ff0dd2-b064-44b4-bfb4-2a338333f06d`
+`resrec:///U-GrayBoltWolf/R-3A32E602BC7C303D8ABFA7AFA213D7979257ED05A6337B80C6A5C9A4BA01C07F`
 
 ![image](https://user-images.githubusercontent.com/4554196/192861133-5d0f481c-bacd-4a7d-828d-fd173e92b766.png)
 
@@ -89,7 +89,7 @@ If running from a headless server, ensure the update server is allowed in the he
 
 ### Session access facet
 
-Once session data is pushed to the server, data can be accessed and presented easily within a facet or in-world UIX. A facet is made available within this folder: `resrec:///U-GrayBoltWolf/R-5ceb026a-00d4-4b64-a922-dd34d33ba6d3`
+Once session data is pushed to the server, data can be accessed and presented easily within a facet or in-world UIX. A facet is made available within this folder: `resrec:///U-GrayBoltWolf/R-76EB61795AB388ACD37AC96E1BC6129E4DCCAE783698354DD88FA37E6754E91A`
 
 A video is also provided for quick review of the Facet: https://youtu.be/dyGw4tEvZ_A
 
